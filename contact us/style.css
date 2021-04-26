@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rancho&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background:#094b65;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    color:#fff;
+    max-width: 500px;
+    line-height: 56px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-left:25px;
+    font-size: 25px;
+}
+
+.contact-from {
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info,.contact-from{
+    flex:1;
+}
+
+.contact-from h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-from .text-box{
+    background: #fff;
+    color: #000;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1x rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+}
+
+.contact-from .text-box:first-child{
+    margin-right: 15px;
+}
+
+.contact-from textarea{
+    background:#fff;
+    color: #000;
+    border: none;
+    width:100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1x rgba(250, 246, 246, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-from .send-btn{
+
+    float: right;
+    background: #fff;
+    color: black;
+    border-color: #fff;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3 ease;
+   
+}
+.contact-from .send-btn:hover {
+    background-color:#094b65 ;
+}
+
+@media screen  and (max-width : 950px) {
+    .contact-section{
+        flex-direction:column ;
+    }
+    .contact-info, .contact-from{
+        margin: 30px 50px;
+    }
+    .contact-from h2{
+        font-size: 30px;
+    }
+    .contact-from .text-box {
+        width: 100%;
+    }
+}
+
+.alert-success {
+    z-index: 1;
+    background: #fff;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #5f6600;
+    border-radius: 4px;
+}
+
+.alert-error {
+    z-index: 1;
+    background: #fff;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #5f6600;
+    border-radius: 4px;
+}
